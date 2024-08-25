@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import './App.css'
-import Todo from './components/Todo/Todo'
+import TodoApp from './components/TodoApp';
 
 function App() {
   const [todos, setTodos] = useState([
     {id: 1, text: "Do sanket sir's assignment", isComplete: false},
-    {id: 2, text: "Start a react project", isComplete: false}
+    {id: 2, text: "Start a react project", isComplete: true}
   ]);
 
   return (
     <>
-     <Todo todos={todos} setTodos={setTodos}/>
+     <TodoApp todos={todos} setTodos={setTodos}/>
     </>
   )
 }
